@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="basicodossites.css">
+    <link rel="stylesheet" href="reclamacao.css">
+    <script type="text/javascript" src="reclame.js"></script>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("aV3BW_5SQ12tLrAAh");
+    })();
+    </script>
+    <title>Reclamações</title>
+</head>
+<body>
+
+    <header>
+        <nav> <!--Barra de navbar do usuário-->
+
+            <a href="#" class="logo">Tiger</a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Projetos</a></li>
+                <li><a href="#">Contatos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="box">
+        <form>
+            <fieldset>
+                <legend><b>Formulário de clientes</b></legend>
+                <br>
+                <!--Nome do usuário-->
+                <div class="inputBox">
+                    <input type="text" name="nome" id="nome" class="inputUser" required>
+                    <label for="name" class="labelInput">Nome</label>                </div>
+                <br>
+                <!--Email do usuário-->
+                <div class="inputBox">
+                    <input type="text" name="email" id="email_id" class="inputUser" required>
+                    <label for="email" class="labelInput">Email</label>
+                </div>
+                <br>
+                <!--Telefone do usuário-->
+                <br>
+
+                <textarea id="message" rows="10" placeholder="Como posso ajudar você?"></textarea>
+
+                <br>
+                <!--Botão de enviar-->
+                <button id="button" onclick="sendMail()">APERTE</button>
+            </fieldset>
+        </form>
+    </div>
+    
+    <!--Scripts js usados para o site ficar funcional-->
+    <script src="mobile-menu.js"></script>
+    <script src="effect.js"></script>
+
+</body>
+</html>
